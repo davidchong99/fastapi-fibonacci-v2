@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fastapi-fibonacci-v2
+  labels:
+    app: fastapi-fibonacci-v2
+    service: fastapi-fibonacci-v2
+spec:
+  ports:
+    - port: 8080
+      name: http
+  selector:
+    app: fastapi-fibonacci-v2

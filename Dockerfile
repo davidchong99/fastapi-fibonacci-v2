@@ -15,4 +15,4 @@ RUN groupadd -g 1001 appgroup && \
 WORKDIR /app
 COPY --from=build --chown=appuser:appgroup /app .
 USER appuser
-ENTRYPOINT ["python", "-m", "app.main:app"]
+ENTRYPOINT ["python", "-m", "app.main"]

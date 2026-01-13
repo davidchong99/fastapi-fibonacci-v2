@@ -3,7 +3,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import PlainTextResponse
 from fastapi_pagination import Page, add_pagination, paginate
-from env import SETTINGS
+from app.env import SETTINGS
 
 
 def fibonacci(nterm: int) -> list:
