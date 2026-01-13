@@ -17,7 +17,7 @@ def fibonacci(nterm: int) -> list:
     return result
 
 
-app = FastAPI(title="Fibonacci API", version="1.0.0")
+app = FastAPI(title="Fibonacci API", version="1.0.0", root_path="/fibonacci/v1/")
 add_pagination(app)
 
 # Generate the Fibonacci series up the max int possible with underlying OS
